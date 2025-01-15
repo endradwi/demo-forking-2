@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import User from './pages/User'
 import Profile from './pages/Profile'
+import Test from "./pages/Test";
 
 const router = createBrowserRouter([
   {
@@ -17,12 +18,14 @@ const router = createBrowserRouter([
     path: '/profile',
     element: <Profile />
   },
+  {
+    path: "/test",
+    element: <Test />,
+  },
 ])
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
