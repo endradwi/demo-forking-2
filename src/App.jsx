@@ -1,9 +1,10 @@
-import React from 'react'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
 import User from './pages/User'
 import Profile from './pages/Profile'
 import Test from "./pages/Test";
+import Footer from './pages/footer'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     path: "/test",
     element: <Test />,
   },
+  {
+    path: '/footer',
+    element: <Footer />
+  }
 ])
 
 function App() {
